@@ -51,7 +51,7 @@
     <section id="top_actions_section" class="row m-b-0 container">
         <!-- add button -->
         <div class="p-l-10 p-r-10 p-t-10 col s12 m4 l4">
-            <button id="add-user-button" class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-100 rounded-pill flex-c">
+            <button id="add-user-button" class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-100 rounded-pill flex-c" x-on:click="showAddModal = true">
                 <i class="material-icons m-r-5">add</i>
                 Add User
             </button>
@@ -170,8 +170,8 @@
 
 <!-- Modal-User -->
 
-    <div class="add_user_modal_back dis-none"></div>
-    <div class="add_user_modal container rounded-top-30 trans-0-3">
+    <div class="add_user_modal_back dis-none" x-bind:class="{'dis-none' : !showAddModal}" x-on:click="showAddModal = false"></div>
+    <div class="add_user_modal container rounded-top-30 trans-0-3" x-bind:class="showAddModal ? 'show' : '' ">
         <div class="row p-t-10 p-b-10 p-r-40 p-l-40 center-on-small-only">
             <h5>
                 <i class="material-icons m-r-10 m-l-10 pos-relativ top-4">person_add</i>
