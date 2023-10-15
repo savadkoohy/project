@@ -147,13 +147,11 @@ table.centered thead tr th, table.centered tbody tr td{
 }
 .dis-flex{display: flex;}
 .dis-none{display: none;}
-
-/* position */
-.dis-none {display: none;}
 .dis-block{display: block;}
 .dis-inline{display: inline;}
 .dis-inline-block{display: inline-block;}
 
+/* position */
 .pos-fixed{position: fixed;}
 .pos-relative{position: relative;}
 .pos-absolute{position: absolute;}
@@ -253,5 +251,15 @@ table.centered thead tr th, table.centered tbody tr td{
 .bottom-0{bottom: 0;}
 
 .of-hidden{overflow: hidden;}
+
+.pageNumber{
+    border: 2px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
